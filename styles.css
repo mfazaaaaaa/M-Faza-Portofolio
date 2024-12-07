@@ -1,0 +1,272 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff; /* Background utama putih */
+    color: #000; /* Teks utama hitam */
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    position: sticky;
+    top: 0;
+    background: #000; /* Latar belakang hitam */
+    z-index: 1000;
+    padding: 1rem 2rem; /* Padding lebih besar */
+    display: flex;
+    justify-content: space-between; /* Memastikan tombol Home di kiri dan navigasi di kanan */
+    align-items: center;
+}
+
+/* Header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 20px;
+  }
+  
+  header a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 18px;
+  }
+  
+  /* Indikator garis bawah */
+  #nav-indicator {
+    position: absolute;
+    bottom: 0;
+    height: 3px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+  }
+  
+  /* Section styling */
+  section {
+    padding: 60px 0;
+  }
+  
+  section h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+  }
+  
+  /* Aktifkan kelas aktif saat menggulir ke bagian tertentu */
+  nav a.active {
+    color: #00bcd4;
+  }  
+
+/* Tombol Home besar di kiri */
+.home-btn {
+    font-size: 1.5rem; /* Ukuran font lebih besar */
+    font-weight: 700; /* Ketebalan font */
+    color: #fff; /* Teks putih */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.home-btn:hover {
+    color: #0288d1; /* Warna biru saat hover */
+}
+
+/* Navigasi di kanan */
+nav {
+    display: flex;
+    gap: 1.5rem; /* Jarak antar menu */
+}
+
+nav a {
+    font-size: 1rem;
+    color: #fff; /* Teks putih */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #0288d1; /* Warna biru saat hover */
+}
+
+/* Nama di bawah header */
+#name-banner {
+    text-align: center;
+    background: #fff; /* Latar belakang putih */
+    color: #000; /* Teks hitam */
+    padding: 2rem 0; /* Jarak atas dan bawah */
+    border-bottom: 1px solid #ddd; /* Garis pemisah */
+}
+
+#name-banner h1 {
+    font-size: 2.5rem; /* Ukuran font besar */
+    font-weight: 600; /* Ketebalan font */
+    margin: 0;
+    color: #000; /* Teks hitam */
+}
+
+/* Sections */
+section {
+    padding: 3rem 0;
+    text-align: center;
+    background-color: #fff; /* Latar belakang bagian putih */
+    color: #000; /* Teks bagian hitam */
+}
+
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #000; /* Heading hitam */
+}
+
+.typing-animation {
+    display: inline-block;
+    font-size: 1.5rem; /* Sesuaikan ukuran teks */
+    font-weight: 300;
+    color: #555; /* Warna teks */
+    border-right: 2px solid #000; /* Efek kursor */
+    white-space: nowrap;
+    overflow: hidden; /* Sembunyikan teks saat animasi mengetik */
+}
+
+/* About Section */
+#about .about-content {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+#about p {
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #000; /* Teks hitam */
+}
+
+.btn {
+    display: inline-block;
+    background: #00bcd4; /* Tombol tetap biru */
+    color: #fff; /* Teks putih */
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #0288d1; /* Biru lebih gelap saat hover */
+}
+
+/* Skills */
+#skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+#skills li {
+    margin: 10px 0;
+    color: #000; /* Teks hitam */
+}
+
+/* Projects */
+.project {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    background: #f9f9f9; /* Background proyek abu-abu terang */
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: #000; /* Teks hitam */
+}
+
+.project h3 {
+    margin-bottom: 0.5rem;
+    color: #000; /* Judul proyek hitam */
+}
+
+.project a {
+    color: #00bcd4; /* Link proyek biru */
+    text-decoration: none;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+/* Kontainer media untuk gambar dan video */
+.media-container {
+    display: flex;
+    justify-content: center; /* Gambar dan video di tengah */
+    gap: 1rem; /* Jarak antara gambar dan video */
+    margin: 1rem 0;
+}
+
+/* Gaya untuk gambar dan video */
+.media-item {
+    width: 48%; /* Setiap item (gambar/video) menempati 48% lebar kontainer */
+    height: auto; /* Jaga aspek rasio */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan */
+}
+
+/* Atur video agar autoplay tanpa kontrol */
+.media-item video {
+    pointer-events: none; /* Mencegah interaksi dengan video */
+}
+
+/* Contact Section */
+#contact {
+    background: #fff; /* Latar belakang putih */
+    color: #000; /* Teks hitam */
+    padding: 2rem 0;
+    text-align: center;
+    border-top: 1px solid #ddd; /* Garis pemisah */
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #000; /* Judul hitam */
+}
+
+#contact .container {
+    max-width: 800px;
+    margin: auto;
+}
+
+#contact .contact-item {
+    margin: 1rem 0;
+}
+
+#contact .contact-item p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+#contact a {
+    color: #00bcd4; /* Teks tautan biru */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+#contact a:hover {
+    color: #0288d1; /* Biru lebih gelap saat hover */
+}
+
+/* Footer */
+footer {
+    background: #111; /* Footer hitam */
+    padding: 1rem 0;
+    text-align: center;
+    color: #fff; /* Teks putih */
+}
